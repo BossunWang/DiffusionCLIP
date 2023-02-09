@@ -9,6 +9,8 @@ def get_dataset(dataset_type, dataset_paths, config, target_class_num=None, gend
         train_dataset, test_dataset = get_afhq_dataset(dataset_paths['AFHQ'], config)
     elif dataset_type == "LSUN":
         train_dataset, test_dataset = get_lsun_dataset(dataset_paths['LSUN'], config)
+    elif dataset_type == 'AFHQ_Cat':
+        train_dataset, test_dataset = get_afhq_dataset(dataset_paths['AFHQ_Cat'], config, animal_class='cat')
     elif dataset_type == "CelebA_HQ":
         train_dataset, test_dataset = get_celeba_dataset(dataset_paths['CelebA_HQ'], config)
     elif dataset_type == "IMAGENET":

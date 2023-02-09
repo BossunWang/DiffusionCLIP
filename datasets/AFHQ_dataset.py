@@ -25,7 +25,7 @@ class AFHQ_dataset(Dataset):
 
 ################################################################################
 
-def get_afhq_dataset(data_root, config):
+def get_afhq_dataset(data_root, config, animal_class='dog'):
     train_transform = tfs.Compose([tfs.ToTensor(),
                                    tfs.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5),
                                                  inplace=True)])
@@ -34,9 +34,9 @@ def get_afhq_dataset(data_root, config):
                                   tfs.Normalize((0.5, 0.5, 0.5), (0.5, 0.5, 0.5),
                                                 inplace=True)])
 
-    train_dataset = AFHQ_dataset(data_root, transform=train_transform, mode='train', animal_class='dog',
+    train_dataset = AFHQ_dataset(data_root, transform=train_transform, mode='train', animal_class=animal_class,
                                  img_size=config.data.image_size)
-    test_dataset = AFHQ_dataset(data_root, transform=test_transform, mode='val', animal_class='dog',
+    test_dataset = AFHQ_dataset(data_root, transform=test_transform, mode='val', animal_class=animal_class,
                                 img_size=config.data.image_size)
 
     return train_dataset, test_dataset

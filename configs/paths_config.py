@@ -1,13 +1,14 @@
 DATASET_PATHS = {
 	'FFHQ': 'data/celeba_hq/',
 	'CelebA_HQ': 'data/celeba_hq/',
-	'AFHQ': 'data/afhq',
+	'AFHQ': '/media/glory/46845c74-37f7-48d7-8b72-e63c83fa4f68/Animal_dataset/afhq',
 	'LSUN':  'data/lsun',
     'IMAGENET': 'data/imagenet/',
+	'AFHQ_Cat': '/media/glory/46845c74-37f7-48d7-8b72-e63c83fa4f68/Animal_dataset/afhq',
 }
 
 MODEL_PATHS = {
-	'AFHQ': "pretrained/afhq_dog_4m.pt",
+	'AFHQ': "pretrained/afhqdog_p2.pt",
 	'FFHQ': "pretrained/ffhq_10m.pt",
 	'ir_se50': 'pretrained/model_ir_se50.pth',
     'IMAGENET': "pretrained/512x512_diffusion.pt",

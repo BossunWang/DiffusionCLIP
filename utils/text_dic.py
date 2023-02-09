@@ -81,6 +81,10 @@ SRC_TRG_TXT_DIC = {
     'dog_hamster': (['Dog'],
                     ['Hamster']),
 
+    # Cat face
+    'cat_smiling': (['Cat'],
+                    ['Smiling Cat']),
+
 
     # Church
     'church_snow': (['Church'],
@@ -118,6 +122,14 @@ SRC_TRG_TXT_DIC = {
                        ['Palace Bedroom']),
     'bedroom_wooden': (['Bedroom'],
                        ['Wooden Bedroom']),
+
+
+    # Tennis ball
+    'orange': (['tennis ball'],
+               ['orange']),
+    # ImageNet Style Transfer
+    'watercolor_art': (['a photo'],
+                       ['a watercolor art']),
 
 
 }
